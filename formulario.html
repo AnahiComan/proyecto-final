@@ -1,256 +1,295 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/estilos.css">
-    <title>Choque esa pata</title>
-  </head>
-  <body>
-      <div id="header" class="bg-ligth">
-        <div class="container-xl bg-ligth">
-            <nav class="navbar navbar-expand-lg navbar-light bg-ligth">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="index.html">
-                    <img src="assets/marca_institucional.JPG" alt="marca_institucional" width="80" height="alto">
-                  </a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="nosotros.html">NOSOTROS</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          ADOPTA
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="galeria.html">GALERIA DE FOTOS</a></li>
-                          <li><a class="dropdown-item" href="formulario.html">FORMULARIO DE ADOPCION</a></li>
-                        </ul>
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="sumate.html">¡SUMATE!</a>
-                      </li>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/estilos.css">
+  <title>Choque esa pata</title>
+</head>
+
+<body>
+  <div id="header" class="bg-ligth">
+    <div class="container-xl bg-ligth">
+      <nav class="navbar navbar-expand-lg navbar-light bg-ligth">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/marca_institucional.JPG" alt="marca_institucional" width="80" height="alto">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="nosotros.html">NOSOTROS</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  ADOPTA
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="galeria.html">GALERIA DE FOTOS</a></li>
+                  <li><a class="dropdown-item" href="formulario.html">FORMULARIO DE ADOPCION</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="sumate.html">¡SUMATE!</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <div id="Form" class="ConteinerForm py-5">
+    <div class="col-10 offset-1">
+      <h1>FORMULARIO DE PRE-ADOPCION</h1>
+      <div class="importante">
+        <p>Nuestro proceso de adopción tiene dos pasos sin excepción: el primero es completar el formulario, que en caso
+          de ser seleccionado, te lleva al segundo: una entrevista vía videollamada con la familia para conocerlos,
+          contarles más sobre nuestro rescatado y así tomar la decisión final respecto a la adopción. <br>
+          Algunas preguntas pueden parecer con más o menos sentido, pero recordá que nosotras necesitamos tener la mayor
+          seguridad posible sobre quien vaya a ser el adoptante de alguno de nuestros pequeños! </p>
+      </div>
+      <div class="cuestionario">
+        <div class="cuestionario-p">
+          <div id="datos del rescatado" class="pt-10">
+            <p>NOMBRE DE NUESTRO RESCATADO</p>
+            <div class="row">
+              <div class="col pt-8">
+                <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+              </div>
+            </div>
+            <div id="datos del adoptante" class="pt-4">
+              <p>CONTANOS SOBRE VOS Y TU FAMILIA</p>
+              <form class="row g-3 needs-validation" novalidate>
+                <div class="col-md-4 position-relative pt-4">
+                  <label for="validationTooltip01" class="form-label">Nombre</label>
+                  <input type="text" class="form-control" id="validationTooltip01">
+                  <div class="valid-tooltip">
+                    Looks good!
                   </div>
                 </div>
-              </nav>
-          </div>  
-      </div>
-      
-      <div id="Form" class="ConteinerForm py-5">
-        <div class="col-10 offset-1">
-          <h1>FORMULARIO DE PRE-ADOPCION</h1>
-            <div class="importante">
-            <p>Nuestro proceso de adopción tiene dos pasos sin excepción: el primero es completar el formulario, que en caso de ser seleccionado, te lleva al segundo: una entrevista vía videollamada con la familia para conocerlos, contarles más sobre nuestro rescatado y así tomar la decisión final respecto a la adopción. <br>
-            Algunas preguntas pueden parecer con más o menos sentido, pero recordá que nosotras necesitamos tener la mayor seguridad posible sobre quien vaya a ser el adoptante de alguno de nuestros pequeños! </p>
-            </div>
-          <div class="cuestionario">
-            <div class="cuestionario-p">
-              <div id="datos del rescatado" class="pt-10">
-                <p>NOMBRE DE NUESTRO RESCATADO</p>
-                <div class="row">
-                  <div class="col pt-8">
-                    <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+                <div class="col-md-4 position-relative pt-4">
+                  <label for="validationTooltip02" class="form-label">Apellido</label>
+                  <input type="text" class="form-control" id="validationTooltip02">
+                  <div class="valid-tooltip">
+                    Looks good!
                   </div>
-              </div>
-              <div id="datos del adoptante" class="pt-4">
-                <p>CONTANOS SOBRE VOS Y TU FAMILIA</p>
-                  <form class="row g-3 needs-validation" novalidate>
-                    <div class="col-md-4 position-relative pt-4">
-                      <label for="validationTooltip01" class="form-label">Nombre</label>
-                      <input type="text" class="form-control" id="validationTooltip01">
-                      <div class="valid-tooltip">
-                        Looks good!
-                      </div>
+                </div>
+                <div class="col-md-4 position-relative pt-4">
+                  <label for="validationTooltipUsername" class="form-label">Mail</label>
+                  <div class="input-group has-validation">
+                    <span class="input-group-text" id="validationTooltipUsernamePrepend"></span>
+                    <input type="text" class="form-control" id="validationTooltipUsername"
+                      aria-describedby="validationTooltipUsernamePrepend" required>
+                    <div class="invalid-tooltip">
+                      Please choose a unique and valid username.
                     </div>
-                    <div class="col-md-4 position-relative pt-4">
-                      <label for="validationTooltip02" class="form-label">Apellido</label>
-                      <input type="text" class="form-control" id="validationTooltip02">
-                      <div class="valid-tooltip">
-                        Looks good!
-                      </div>
+                  </div>
+                </div>
+                <div class="col-md-6 position-relative">
+                  <label for="validationTooltip03" class="form-label">Domicilio completo</label>
+                  <input type="text" class="form-control" id="validationTooltip03" required>
+                  <div class="invalid-tooltip">
+                    Please provide a valid city.
+                  </div>
+                </div>
+                <div class="col-md-3 position-relative">
+                  <label for="validationTooltip05" class="form-label">Localidad</label>
+                  <input type="text" class="form-control" id="validationTooltip05" required>
+                  <div class="invalid-tooltip">
+                    Please provide a valid zip.
+                  </div>
+                </div>
+                <div class="col-md-3 position-relative">
+                  <label for="validationTooltip04" class="form-label">Tipo de hogar</label>
+                  <select class="form-select" id="validationTooltip04" required>
+                    <option selected disabled value="">Seleccionar</option>
+                    <option>Casa</option>
+                    <option>Departamento</option>
+                  </select>
+                  <div class="invalid-tooltip">
+                    Please select a valid state.
+                  </div>
+                </div>
+                <fieldset class="row mb-3">
+                  <legend class="col-form-label col-sm-2 pt-2">¿Trabajas?</legend>
+                  <div class="col-sm-10 pt-4">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1"
+                        checked>
+                      <label class="form-check-label" for="gridRadios1">
+                        SI
+                      </label>
                     </div>
-                    <div class="col-md-4 position-relative pt-4">
-                      <label for="validationTooltipUsername" class="form-label">Mail</label>
-                      <div class="input-group has-validation">
-                        <span class="input-group-text" id="validationTooltipUsernamePrepend"></span>
-                        <input type="text" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required>
-                        <div class="invalid-tooltip">
-                          Please choose a unique and valid username.
-                        </div>
-                      </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                      <label class="form-check-label" for="gridRadios2">
+                        NO
+                      </label>
                     </div>
-                    <div class="col-md-6 position-relative">
-                      <label for="validationTooltip03" class="form-label">Domicilio completo</label>
-                      <input type="text" class="form-control" id="validationTooltip03" required>
-                      <div class="invalid-tooltip">
-                        Please provide a valid city.
-                      </div>
+                  </div>
+                </fieldset>
+                <div class="mb-3 pt-2">
+                  <label for="exampleFormControlTextarea1" class="form-label">¿Cómo está conformada tu familia?¿Hay
+                    niños? ¿De qué edades?
+                  </label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="mb-3 pt-2">
+                  <label for="exampleFormControlTextarea1" class="form-label">¿Todos los integrantes de tu familia están
+                    de acuerdo con la adopción? Si alguien no lo está, ¿por qué?</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="mb-3 pt-2">
+                  <label for="exampleFormControlTextarea1" class="form-label">Si te quedaras sin trabajo, ¿hay alguien
+                    que pudiera hacerse cargo de los gastos de manuntención?
+                  </label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="mb-3 pt-2">
+                  <label for="exampleFormControlTextarea1" class="form-label">En caso de estar en pareja, ¿qué pasaría
+                    con el animal si se separan?
+                  </label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="mb-3 pt-2">
+                  <label for="exampleFormControlTextarea1" class="form-label">En caso de embarazo de algún miembro de la
+                    familia, ¿cambiaría algo en relación del animal que adoptes?</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="mb-3 pt-2">
+                  <label for="exampleFormControlTextarea1" class="form-label">¿Por qué decidiste adoptar?
+                  </label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="mb-3 pt-2">
+                  <label for="exampleFormControlTextarea1" class="form-label">¿Analizaste las ventajas y desventajas de
+                    agregar un nuevo integrante a tu familia?
+                  </label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="mb-3 pt-2">
+                  <label for="exampleFormControlTextarea1" class="form-label">¿Tuviste o tenes otras mascotas? ¿Cuáles?
+                  </label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <fieldset class="row mb-3">
+                  <legend class="col-form-label col-sm-2 pt-2">En caso de no tener actualmente, ¿qué sucedió con tu
+                    mascota:
+                  </legend>
+                  <div class="col-sm-10 pt-4">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1"
+                        checked>
+                      <label class="form-check-label" for="gridRadios1">
+                        Se perdió
+                      </label>
                     </div>
-                    <div class="col-md-3 position-relative">
-                      <label for="validationTooltip05" class="form-label">Localidad</label>
-                      <input type="text" class="form-control" id="validationTooltip05" required>
-                      <div class="invalid-tooltip">
-                        Please provide a valid zip.
-                      </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                      <label class="form-check-label" for="gridRadios2">
+                        Falleció
+                      </label>
                     </div>
-                    <div class="col-md-3 position-relative">
-                      <label for="validationTooltip04" class="form-label">Tipo de hogar</label>
-                      <select class="form-select" id="validationTooltip04" required>
-                        <option selected disabled value="">Seleccionar</option>
-                        <option>Casa</option>
-                        <option>Departamento</option>
-                      </select>
-                      <div class="invalid-tooltip">
-                        Please select a valid state.
-                      </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                      <label class="form-check-label" for="gridRadios2">
+                        Lo dimos en adopción
+                      </label>
                     </div>
-                    <fieldset class="row mb-3">
-                      <legend class="col-form-label col-sm-2 pt-2">¿Trabajas?</legend>
-                      <div class="col-sm-10 pt-4" >
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                          <label class="form-check-label" for="gridRadios1">
-                            SI
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                          <label class="form-check-label" for="gridRadios2">
-                            NO
-                          </label>
-                        </div>
-                      </div>
-                    </fieldset>
-                    <div class="mb-3 pt-2">
-                      <label for="exampleFormControlTextarea1" class="form-label">¿Cómo está conformada tu familia?¿Hay niños? ¿De qué edades?
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                      <label class="form-check-label" for="gridRadios2">
+                        Otro
                       </label>
                       <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                     </div>
-                    <div class="mb-3 pt-2">
-                      <label for="exampleFormControlTextarea1" class="form-label">¿Todos los integrantes de tu familia están de acuerdo con la adopción? Si alguien no lo está, ¿por qué?</label>
-                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    </div>
-                    <div class="mb-3 pt-2">
-                      <label for="exampleFormControlTextarea1" class="form-label">Si te quedaras sin trabajo, ¿hay alguien que pudiera hacerse cargo de los gastos de manuntención?
-                      </label>
-                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    </div>
-                    <div class="mb-3 pt-2">
-                      <label for="exampleFormControlTextarea1" class="form-label">En caso de estar en pareja, ¿qué pasaría con el animal si se separan?
-                      </label>
-                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    </div>
-                    <div class="mb-3 pt-2">
-                      <label for="exampleFormControlTextarea1" class="form-label">En caso de embarazo de algún miembro de la familia, ¿cambiaría algo en relación del animal que adoptes?</label>
-                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    </div>
-                    <div class="mb-3 pt-2">
-                      <label for="exampleFormControlTextarea1" class="form-label">¿Por qué decidiste adoptar?
-                      </label>
-                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    </div>
-                    <div class="mb-3 pt-2">
-                      <label for="exampleFormControlTextarea1" class="form-label">¿Analizaste las ventajas y desventajas de agregar un nuevo integrante a tu familia?
-                      </label>
-                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    </div>
-                    <div class="mb-3 pt-2">
-                      <label for="exampleFormControlTextarea1" class="form-label">¿Tuviste o tenes otras mascotas? ¿Cuáles?
-                      </label>
-                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    </div>
-                    <fieldset class="row mb-3">
-                      <legend class="col-form-label col-sm-2 pt-2">En caso de no tener actualmente, ¿qué sucedió con tu mascota:
-                      </legend>
-                      <div class="col-sm-10 pt-4" >
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                          <label class="form-check-label" for="gridRadios1">
-                            Se perdió
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                          <label class="form-check-label" for="gridRadios2">
-                            Falleció
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                          <label class="form-check-label" for="gridRadios2">
-                            Lo dimos en adopción
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                          <label class="form-check-label" for="gridRadios2">
-                            Otro
-                          </label>
-                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                        </div>
-                      </div>
-                    </fieldset>
-                    <div class="mb-3 pt-2">
-                      <label for="exampleFormControlTextarea1" class="form-label">Si tenes, ¿están castrados? Si la respuesta es NO: ¿Por qué?
-                      </label>
-                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    </div>
-                    <div class="mb-3 pt-2">
-                      <label for="exampleFormControlTextarea1" class="form-label">¿Estas de acuerdo con la castración en las mascotas tanto hembras como machos? ¿por qué?
-                      </label>
-                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    </div>
-                    <div class="mb-3 pt-2">
-                      <label for="exampleFormControlTextarea1" class="form-label">¿Cómo es su rutina en casa? ¿El animal estaría muchas horas solo?
-                      </label>
-                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    </div>
-                    <div class="mb-3 pt-2">
-                      <label for="exampleFormControlTextarea1" class="form-label">¿Tenes protecciones (rejas, redes...) en ventanas y balcones?
-                      </label>
-                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    </div>
-                    <div class="mb-3 pt-2">
-                      <label for="exampleFormControlTextarea1" class="form-label">En caso de alquilar, ¿tenes asegurado de que se admitan mascotas?
-                      </label>
-                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    </div>
-                    <div class="mb-3 pt-2">
-                      <label for="exampleFormControlTextarea1" class="form-label">En caso de mudarte o irte a vivir a otro país, ¿que pasaría con la mascota?</label>
-                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    </div>
-                    <div class="mb-3 pt-2">
-                      <label for="exampleFormControlTextarea1" class="form-label">Si el animal no se adapta o tiene problemas de conducta, ¿qué harías?
-                      </label>
-                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    </div>
-                    <div class="col-12 pb-4">
-                      <a  href="alerta.html" class="btn btn-primary" type="submit">Enviar Formulario</a>
-                    </div>
-                  </form>
-              </div>
+                  </div>
+                </fieldset>
+                <div class="mb-3 pt-2">
+                  <label for="exampleFormControlTextarea1" class="form-label">Si tenes, ¿están castrados? Si la
+                    respuesta es NO: ¿Por qué?
+                  </label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="mb-3 pt-2">
+                  <label for="exampleFormControlTextarea1" class="form-label">¿Estas de acuerdo con la castración en las
+                    mascotas tanto hembras como machos? ¿por qué?
+                  </label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="mb-3 pt-2">
+                  <label for="exampleFormControlTextarea1" class="form-label">¿Cómo es su rutina en casa? ¿El animal
+                    estaría muchas horas solo?
+                  </label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="mb-3 pt-2">
+                  <label for="exampleFormControlTextarea1" class="form-label">¿Tenes protecciones (rejas, redes...) en
+                    ventanas y balcones?
+                  </label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="mb-3 pt-2">
+                  <label for="exampleFormControlTextarea1" class="form-label">En caso de alquilar, ¿tenes asegurado de
+                    que se admitan mascotas?
+                  </label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="mb-3 pt-2">
+                  <label for="exampleFormControlTextarea1" class="form-label">En caso de mudarte o irte a vivir a otro
+                    país, ¿que pasaría con la mascota?</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="mb-3 pt-2">
+                  <label for="exampleFormControlTextarea1" class="form-label">Si el animal no se adapta o tiene
+                    problemas de conducta, ¿qué harías?
+                  </label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="col-12 pb-4">
+                  <a href="alerta.html" class="btn btn-primary" type="submit">Enviar Formulario</a>
+                </div>
+              </form>
             </div>
           </div>
         </div>
       </div>
-  <footer>
-    <div id="redes" class="col-md-12 ppt-4 pb-4 mb-0 container-fluid text-center">
-      <div class="imagenes redes">
-        <img src="assets/facebook.png" class="rounded" alt="facebook" width="25" height="auto">
-        <img src="assets/twitter.jpg" class="rounded" alt="twitter" width="25" height="auto">
-        <img src="assets/instagram.jpg" class="rounded" alt="instagram" width="25" height="auto">
-        <img src="assets/wtsp.png" class="rounded" alt="wtsp" width="25" height="auto"> 
-      </div>
     </div>
-  </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>  
-  </body>
+    <footer>
+      <div id="redes" class=" row col-md-12 pt-4 pb-4 mb-0 container-fluid text-center">
+        <div class="imagenes redes">
+          <a  href="https://es-la.facebook.com/" target="_blank">
+            <img src="assets/facebook.png" class="rounded" alt="facebook" width="25" height="auto">
+          </a>
+          <a href="https://twitter.com/?lang=es" target="_blank">
+            <img src="assets/twitter.jpg"  class="rounded" alt="twitter" width="25" height="auto">
+          </a>
+          <a href="https://www.instagram.com/" target="_blank">
+            <img src="assets/instagram.jpg"  class="rounded" alt="instagram" width="25" height="auto">
+          </a>
+          <a href="https://www.whatsapp.com/?lang=es" target="_blank">
+            <img src="assets/wtsp.png"  class="rounded" alt="wtsp" width="25" height="auto">
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"></script>
+</body>
+
 </html>
